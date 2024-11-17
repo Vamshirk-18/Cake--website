@@ -1,0 +1,516 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.homepage {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero {
+  background-color: #ff6f61;
+  color: white;
+  padding: 40px 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.featured-cakes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-right: 100px;
+  text-align:center;
+
+}
+
+.cake-card {
+  text-align: center;
+  width: 200px;
+}
+
+.cake-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cake-card h3 {
+  margin: 10px 0;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+  background-color: #ff6f61 ;
+}
+
+.footer ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+
+
+
+.cake-categories {
+  text-align: center;
+  padding: 20px;
+}
+
+.category-card {
+  display: inline-block;
+  margin: 20px;
+  width: 200px;
+}
+
+.category-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.category-card h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.cake-details {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cake-info {
+  margin-left: 20px;
+}
+
+.cake-info h2 {
+  font-size: 2rem;
+}
+
+.cake-info p {
+  font-size: 1.2rem;
+}
+
+.cake-info input {
+  padding: 5px;
+  width: 50px;
+}
+
+button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ff4a3f;
+}
+
+.cart {
+  padding: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-total {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ff4a3f;
+}
+
+.footer {
+  background-color: #ff6f61;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.footer .social-media a {
+  margin: 0 10px;
+  color: white;
+}
+
+
+.about {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color:  #ff6f61;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.about form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.about form input,
+.about form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.about form button {
+  width: 150px;
+  padding: 10px;
+}
+
+.cake-categories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cake-categories-container h2 {
+  font-size: 2.5rem;
+  color: #ff6f61;
+  margin-bottom: 40px;
+}
+
+.cake-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.cake-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cake-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cake-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.cake-item h3 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #333;
+}
+
+.cake-details-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cake-details-link:hover {
+  background-color: #e04e44;
+}
+
+.cake-details-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cake-details-container h2 {
+  text-align: center;
+  color: #ff6f61;
+  margin-bottom: 30px;
+}
+
+.cake-details {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.cake-image  {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.cake-info {
+  max-width: 500px;
+}
+
+.cake-info p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.cake-sizes {
+  margin-top: 20px;
+}
+
+.cake-sizes label {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.cake-sizes select {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.quantity-selector {
+  margin-top: 20px;
+}
+
+.quantity-selector label {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.quantity-selector input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-to-cart-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e04e44;
+}
+
+.about-us-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-container h2 {
+  text-align: center;
+  color: #ff6f61;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.about-section {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.about-image {
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about-text {
+  flex-grow: 1;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.social-media {
+  text-align: center;
+}
+
+.social-media h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+.header {
+  background-color: #6e5f33;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header nav {
+  margin-top: 10px;
+}
+
+.header nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+.footer  ul a {
+color: white;
+margin:0 15px;
+text-decoration: none;
+font-weight: bold;
+}
+.footer ul a:hover{
+  text-decoration: underline;
+}
+h2{
+  color: #ff6f61;
+}
